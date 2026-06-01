@@ -1,0 +1,28 @@
+.error-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        margin: 3.2rem 0;
+        color: var(--title-color);
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.6rem;
+    }
+}
+
+.error-page-logo {
+    width: 8em;
+    color: var(--blue);
+}

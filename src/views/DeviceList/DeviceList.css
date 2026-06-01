@@ -1,0 +1,9 @@
+.device-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hide {
+    visibility: hidden;
+}

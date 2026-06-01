@@ -1,0 +1,40 @@
+.device-search {
+    --left-padding: 3.2rem;
+    --right-padding: 0.8rem;
+    --magnifying-glass-size: 1.4rem;
+
+    form {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: var(--magnifying-glass-size);
+            height: var(--magnifying-glass-size);
+            top: 50%;
+            left: calc(var(--left-padding) - var(--magnifying-glass-size));
+            background: url("../../assets/magnifying_glass.svg") no-repeat;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+    }
+
+    input {
+        width: 32rem;
+        height: 3.2rem;
+        background: var(--input-bg);
+        color: var(--input-value);
+        font-size: var(--font-size-text);
+        line-height: 2.4rem;
+        border-style: none;
+        box-sizing: border-box;
+        border-radius: var(--border-radius);
+        padding: 0 var(--right-padding) 0 var(--left-padding);
+    }
+}
+
+@media (max-width: 768px) {
+    .device-search input {
+        width: 24rem;
+    }
+}

@@ -1,0 +1,48 @@
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - var(--header-height));
+    padding: 0 var(--common-padding-large);
+
+    @media (max-width: 768px) {
+        padding: 0 var(--common-padding);
+    }
+}
+
+.interactive {
+
+    &:focus,
+    &:focus-within {
+        outline-style: solid;
+        outline-width: 1px;
+        outline-color: var(--blue);
+        outline-offset: -1px;
+    }
+}
+
+a.cta, button.cta {
+    font-size: var(--font-size-text);
+    line-height: 2rem;
+    cursor: pointer;
+    background: transparent;
+    border-style: none;
+    border-radius: var(--border-radius);
+    padding: 0;
+
+    &,
+    &:focus,
+    &:active
+    &:visited {
+        color: var(--blue);
+        outline-offset: 0;
+    }
+
+    &:hover {
+        color: var(--blue-hover);
+    }
+}
+
+.vertical-scroll {
+    overflow-y: auto;
+}

@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "UI Sans";
+    src: url("./assets/ui-sans-v9-regular.woff2");
+}
+
+:root {
+    --background: #fff;
+    --button-bg: #F4F5F6;
+    --button-text: #50565E;
+    --header-text: #808893;
+    --blue: #006FFF;
+    --blue-hover: #0059CC;
+    --title-color: #262626;
+    --border-color: #EDEDF0;
+    --checkbox-border-color: #B6B9C4;
+    --subtitle: #595959;
+    --subtitle-light: #8C8C8C;
+    --device-count-color: #BDBDBD;
+    --input-bg: #F6F6F8;
+    --input-value: #212327;
+    --icon-color: #838691;
+    --image-bg-color: #F9FAFA;
+
+    --border-radius: 0.4rem;
+    --common-padding-small: 0.8rem;
+    --common-padding: 1.6rem;
+    --common-padding-large: 3.2rem;
+    --font-size-text: 1.4rem;
+    --header-height: 5rem;
+
+    --button-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.06), 0 0.8rem 2.4rem rgba(0, 0, 0, 0.08);
+
+    --font-ui-sans: "UI Sans", sans-serif;
+
+    /* JsonPreview colors */
+    --json-key: var(--blue);
+    --json-string: #5BAD6F;
+    --json-number: #D4875A;
+    --json-boolean: #C47DB8;
+    --json-null: #8E8E8E;
+    --json-punctuation: var(--button-text);
+
+    font: 10px/150% var(--font-ui-sans);
+    color: var(--title-color);
+    background: var(--background);
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+a,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+    text-decoration: unset;
+    color: tomato;
+}
+
+
+button,
+button:visited,
+button:focus,
+button:hover,
+button:active {
+    text-decoration: unset;
+    color: tomato;
+}

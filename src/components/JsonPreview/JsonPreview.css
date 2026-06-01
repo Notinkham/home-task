@@ -1,0 +1,51 @@
+.json-preview {
+    font-family: monospace;
+    margin: var(--common-padding) auto 0 auto;
+    width: 76.8rem;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+
+    pre {
+        font-size: var(--font-size-text);
+        position: relative;
+        background: var(--button-bg);
+        border-radius: var(--border-radius);
+        padding: 16px 20px;
+        line-height: 1.7;
+        overflow-x: auto;
+        margin: 0px;
+        white-space: pre;
+        width: 76.8rem;
+    }
+}
+
+.json-preview-controls {
+    position: absolute;
+    top: var(--common-padding);
+    right: var(--common-padding);
+    z-index: 1;
+    display: flex;
+    gap: var(--common-padding-small);
+
+    button {
+        background: var(--background);
+        color: var(--button-text);
+        border: 1px solid transparent;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3.2rem;
+        height: 3.2rem;
+        cursor: pointer;
+        border-radius: var(--border-radius);
+        box-shadow: var(--button-shadow);
+    }
+}
+
+.controls-icon {
+    width: 1em;
+}

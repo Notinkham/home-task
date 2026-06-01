@@ -1,0 +1,19 @@
+.load-more-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: var(--common-padding) 0;
+}
+
+.load-more {
+    background: transparent;
+    border-style: none;
+    color: var(--blue);
+    cursor: pointer;
+    font-size: 1.4rem;
+    line-height: 3.2rem;
+
+    &:hover {
+        color: var(--blue-hover);
+    }
+}
